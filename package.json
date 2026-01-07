@@ -1,0 +1,31 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "build": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css",
+  "watch": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11"
+  },
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "ejs": "html"
+  }
+}
