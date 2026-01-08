@@ -3,206 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link href="public/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="./public/output.css" rel="stylesheet">
+    <script src="./js/app.js" defer></script>
+    
     <title>clipboard</title>
 
 </head>
 <body>
-    <!--hero section-->
-    <section id="hero">
-        <div class="section-container mb-40  pt-16">
-            <img src="./public/images/logo.svg" alt="" class="mx-auto my-16 ">
-            <h3 >
-                A history of everything you copy
-            </h3>
-            <p class="section-content text-2xl mb-10">
-                Clipboard allows you to track and organize everything you copy.
-                Instantly access your clipboard on all your devices. 
-            </p>
-            <!--buttons container-->
-            <div class="button-container">
-                <a href="#" class="p-4 px-8 rounded-full shadow-lg text-center bg-strongCyan duration-200 hover:opacity-80 hover:shadow-xl">
-                    download for ios
-                </a>
-                <a href="#" class="p-4 px-8 rounded-full shadow-lg text-center bg-lightBlue duration-200 hover:opacity-80 hover:shadow-xl">
-                    download for Mac
-                </a>
+  <!--hero section-->
+  <section id="hero">
+    <!--hero container-->
+    <div class="container max-w-6xl mx-auto  px-6 py-12 ">
+     <!--Menu/logo container-->
+     <nav class="flex flex-row items-center justify-between font-bold text-white">
+      <!--image-->
+      <img src="./images/logo.svg" alt="">
+      <!--menu-->
+      <div class="hidden h-10 font-alata md:flex md:space-x-8">
+        <div class="group">
+          <a href="#">About</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="#">Careers</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="#">Events</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="#">Products</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="#">Support</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+      </div>
+      <!-- hamburger buttom-->
+       <div class="md:hidden">
+        <button id="menu-btn" type="button" class=" z-40 hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+       </div>
+     </nav>
+     <!--mobile menu-->
+     <div id="menu" class="absolute top-0 left-0 right-0 bottom-0 hidden flex-col bg-black self-end min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase">
+      <a href="" class="hover:text-pink-500">About</a>
+      <a href="" class="hover:text-pink-500">Careers</a>
+      <a href="" class="hover:text-pink-500">Events</a>
+      <a href="" class="hover:text-pink-500">Products</a>
+      <a href="" class="hover:text-pink-500">Supports</a>
+     </div>
+     <div class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
+      impressive experiences that deliver
+     </div>
+    </div>
+  </section>
+  <!--Feature section-->
+  <section id="--Feature">
+    <!--Feature container-->
+    <div class="relative container flex flex-col max-w-6xl mx-auto py-32 px-6 md:flex-row text-gray-900 md:px-0">
+    <img src="./images/desktop/image-interactive.jpg" alt="">
+    <!--text container-->
+    <div class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
+     <h2 class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">the leader in  interactive vr</h2>
+     <p class="max-w-md text-center md:text-left">
+      Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+     </p>
+    </div>
+  </div>
+  </section>
+  <!--creation section-->
+  <section id="creations">
+    <!--creation container-->
+    <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+      <!--creation header-->
+      <div class="flex justify-center mb-20 md:space-x-20 md:justify-between">
+        <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+          our creations
+        </h2>
+        <button class=" hidden btn  md:block">see all</button>
+      </div>
+      <!--item container 1-->
+      <div class="items-container">
+        <!--item 1-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-deep-earth.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-deep-earth.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>DEEP EARTH</h5>
+        </div>
+         <!--item 2-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-night-arcade.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-night-arcade.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>Night Arcade</h5>
+        </div>
+         <!--item 3-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-soccer-team.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-soccer-team.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>Soccer Team VR</h5>
+        </div>
+         <!--item 4-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-grid.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-grid.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>The Grid</h5>
+        </div>
+      </div>
+      <!--items container-->
+      <div class="items-container mt-20">
+         <!--item 5-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-from-above.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-from-above.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>From Up Above VR</h5>
+        </div>
+         <!--item 6-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-pocket-borealis.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-pocket-borealis.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>Pocket Borealis</h5>
+        </div>
+         <!--item 7-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-curiosity.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-curiosity.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>The Curiosity</h5>
+        </div>
+         <!--item 8-->
+        <div class="group item ">
+          <!--desktop image-->
+          <img class="hidden w-full duration-200 md:block group-hover:scale-110 " src="./images/desktop/image-fisheye.jpg" alt="">
+          <!--mobile image-->
+          <img class="w-full md:hidden " src="./images/mobile/image-fisheye.jpg" alt="">
+          <!--items gradient-->
+          <div class="items_gradients"></div>
+          <!--item-text-->
+          <h5>Make It Fisheye</h5>
+        </div>
+        </div>
+        <!--bottoms buttom container-->
+        <div class="flex mt-10 justify-center md:hidden">
+        <button class="btn w-full md:hidden">
+          see all 
+        </button> 
+        </div>
+    </div>
+  </section>
+  <footer class="bg-black">
+      <!-- Container -->
+      <div class="container max-w-6xl py-10 mx-auto">
+        <!-- Footer Flex Container -->
+        <div
+          class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start"
+        >
+          <!-- Menu & Logo Container -->
+          <div
+            class="flex flex-col items-center space-y-8 md:items-start md:space-y-4"
+          >
+            <!-- Logo -->
+            <div class="h-8">
+              <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
             </div>
-        </div>
-    </section>
-    <section id="snippets">
-        <div class="section-container my-20 px-6">
-            <h3>
-                Keep track of your snippets
-            </h3>
-            <p class="section-content text-xl mx-auto mb-10">
-                Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.
-            </p>
-        </div>
-    </section>
-    <section id="features">
-        <div class="section-container my-20">
-            <div class="relative flex flex-col md:flex-row md:space-x-32">
-                <!--image-->
-                <div class="md:w-1/2">
-                    <img src="./public/images/image-computer.png" alt="" class="md:absolute top-0 right-[50%]">
-                </div>
-
-                <!--items container-->
-                <div class="flex flex-col mt-16 mb-24 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16">
-                    <!--items 1-->
-                   
-                  <div>
-                    <h5 >Quick Search</h5>
-                    <p class="max-w-md text-grayishBlue">
-                    Easily search your snippets by content, category, web address,
-                    application, and more.
-                    </p>
-                  </div>
-                 <!-- Item 2 -->
-                  <div>
-                    <h5>iCloud Sync</h5>
-                    <p class="max-w-md text-grayishBlue">
-                    Instantly saves and syncs snippets across all your devices.
-                    </p>
-                 </div>
-                 <!-- Item 3 -->
-                 <div>
-                  <h5 class="items-center">Completely History</h5>
-                  <p class="max-w-md text-grayishBlue">
-                  Retrieve any snippets from the first moment you started using
-                  the app.
-                  </p>
-                 </div>
-                    
-                </div>
-
-            </div> 
-        </div>
-    </section>
-    <!--Access anywhere section-->
-    <section id="Access">
-        <div class="section-container text-xl my-20">
-            <h3>
-                Access Clipboard Anywhere
-            </h3>
-            <p class="section-content mb-24 ">
-                Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.
-            </p>
-            <img src="./public/images/image-devices.png" alt="">
-            
-        </div>
-    </section>
-    <!--supercharge-->
-    <section id="supercharge">
-        <div class="section-container py-20">
-            <h3>Supercharge your workflow</h3>
-            <p class="section-content mb-16">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
-            <!--item container-->
-            <div class="flex flex-col space-y-16 justify-between items-center md:flex-row md:space-y-0 md:space-x-12">
-                <!--items 1-->
-                <div class="flex flex-col space-y-5  items-center">
-                    <img src="./public/images/icon-blacklist.svg" alt="" class="mb-6">
-                    <h5>Create Blacklists</h5>
-                    <p class="max-w-md text-grayishBlue">Easily search your snippets by content, category, web address, application, and more.</p>
-                </div>
-                <!--items 2-->
-                <div class="flex flex-col space-y-5  items-center">
-                    <img src="./public/images/icon-text.svg" alt="" class="mb-6">
-                    <h5>Plain Text Snippets</h5>
-                    <p class="max-w-md text-grayishBlue">Remove unwanted formatting from copied text for a consistent look.</p>
-                </div>
-                <!--items 3-->
-                <div class="flex flex-col space-y-5   items-center">
-                    <img src="./public/images/icon-preview.svg" alt="" class="mb-6">
-                    <h5>Sneak Preview</h5>
-                    <p class="max-w-md text-grayishBlue">Quick preview of all snippets on your Clipboard for easy access.
-
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!--refrences section -->
-    <section id="references">
-        <div class="flex flex-col justify-between items-center space-y-16 md:flex-row md:space-y-0 max-w-6xl px-10 mx-auto my-44 ">
-            <img src="./public/images/logo-google.png" alt="">
-            <img src="./public/images/logo-ibm.png" alt="">
-            <img src="./public/images/logo-microsoft.png" alt="">
-            <img src="./public/images/logo-hp.png" alt="">
-            <img src="./public/images/logo-vector-graphics.png" alt="">
-        </div>
-
-    </section>
-    <!--bottoms CTA section-->
-    <sections id="bottoms">
-        <div class="section-container my-20">
-            <h3>
-                Clipboard for iOS and MacOS
-            </h3>
-            <p class="section-content mb-10">
-                Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.
-            </p>
-        </div>
-        <!--button container-->
-        <div class="button-container">
-                <a href="#" class="p-4 px-8 rounded-full shadow-lg text-center bg-strongCyan duration-200 hover:opacity-80 hover:shadow-xl">
-                    download for ios
-                </a>
-                <a href="#" class="p-4 px-8 rounded-full shadow-lg text-center bg-lightBlue duration-200 hover:opacity-80 hover:shadow-xl">
-                    download for Mac
-                </a>
-            </div>
-    </sections>
-    <footer class="bg-gray-50">
-        <div class="section-container">
-            <div class="flex flex-col justify-between items-center md:flex-row ">
-              <img src="./public/images/logo.svg" alt="" class="scale-50">
-              <!--container for menu and social media-->
-              <div class="flex flex-col items-center justify-between mb-10  flex-1 space-y-6 md:flex-row md:mb-10 md:space-y-0 text-grayishBlue">
-                <!--menu-->
-                <div class="flex flex-col  space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0">
-                    <!--Menu 1-->
-                    <div class="flex flex-col space-y-4 text-center md:text-left ">
-                        
-                            <div><a href="#" class="hover:text-strongCyan">FAQs</a></div>
-                            <div><a href="" class="hover:text-strongCyan">Contact Us</a></div>
-                        
-                    </div>
-                    <!--Menu 2-->
-                    <div class="flex flex-col space-y-4 text-center md:text-left">
-                        <div>
-                            <a href="#" class="hover:text-strongCyan">Privacy Policy</a></div>
-                            <div><a href="" class="hover:text-strongCyan">Press Kit</a>
-                        </div>
-                    </div>
-                    <!--Menu 3-->
-                    <div class="flex flex-col space-y-4 text-center md:text-left">
-                        <div><a href="#" class="hover:text-strongCyan">Install Guide</a></div>
-                           
-                        
-                    </div>
-                </div>
-
+            <!-- Menu Container -->
+            <div
+              class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3"
+            >
+              <!-- Item 1 -->
+              <div class="h-10 group">
+                <a href="#">About</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
               </div>
-              <!--socials icons-->
-              <div class="flex justify-between w-32 py-1">
-                <a href="#"><img src="./public/images/icon-facebook.svg" alt="" class="duration-200 ficon"></a>
-                <a href="#"><img src="./public/images/icon-instagram.svg" alt="" class="duration-200 ficon"></a>
-                <a href="#"><img src="./public/images/icon-twitter.svg" alt="" class="duration-200 ficon"></a>
-              </div>  
+              <!-- Item 2 -->
+              <div class="h-10 group">
+                <a href="#">Careers</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- Item 3 -->
+              <div class="h-10 group">
+                <a href="#">Events</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- Item 4 -->
+              <div class="h-10 group">
+                <a href="#">Products</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- Item 5 -->
+              <div class="h-10 group">
+                <a href="#">Support</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
             </div>
-            
+          </div>
+
+          <!-- Social & Copy Container -->
+          <div
+            class="flex flex-col items-start justify-between space-y-4 text-gray-500"
+          >
+            <!-- icons Container -->
+            <div
+              class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0"
+            >
+              <!-- Icon 1 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-facebook.svg" alt="" class="h-6" />
+                </a>
+              </div>
+              <!-- Icon 2 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-twitter.svg" alt="" class="h-6" />
+                </a>
+              </div>
+              <!-- Icon 3 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-pinterest.svg" alt="" class="h-6" />
+                </a>
+              </div>
+              <!-- Icon 4 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-instagram.svg" alt="" class="h-6" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Copy -->
+            <div class="font-bold">
+              &copy; 2022 Loopstudios. All Rights Reserved
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
+
 </body>
-</html>
+</html>        
+         
+       
+        
+
+  
